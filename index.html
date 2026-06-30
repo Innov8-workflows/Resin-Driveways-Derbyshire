@@ -320,6 +320,7 @@
   <div class="hero-video">
     <video class="active" id="hv0" src="hero-video-01.mp4" autoplay muted playsinline preload="auto" poster="hero.jpg"></video>
     <video id="hv1" src="hero-video-02.mp4" muted playsinline preload="auto"></video>
+    <video id="hv2" src="hero-video-03.mp4" muted playsinline preload="auto"></video>
   </div>
   <div class="hero-inner">
     <img src="logo-dark.png" class="hero-logo" alt="Resin Driveways Derbyshire" />
@@ -767,8 +768,8 @@
 
   // hero video crossfade
   (function(){
-    const vids = [document.getElementById('hv0'), document.getElementById('hv1')];
-    if(!vids[0] || !vids[1]) return;
+    const vids = [document.getElementById('hv0'), document.getElementById('hv1'), document.getElementById('hv2')];
+    if(vids.some(v => !v)) return;
     const FADE = 1.0; // seconds of overlap
     vids.forEach((v, i) => {
       v.addEventListener('timeupdate', () => {
