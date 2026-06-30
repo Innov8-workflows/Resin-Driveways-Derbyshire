@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Resin Driveways Derbyshire | Resin Bound Driveways, Patios &amp; Paths</title>
+<meta name="description" content="Premium resin bound driveways, patios and pathways across Derbyshire. SUDS compliant, fully insured installers with a 10 year guarantee. Free no-obligation quotes." />
+<link rel="icon" type="image/png" href="logo-light.png" />
+<link rel="apple-touch-icon" href="logo-light.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --navy:#283648;
+    --navy-900:#1b2733;
+    --navy-700:#22303f;
+    --gold:#c2a15c;
+    --gold-600:#a8884a;
+    --gold-100:#f1e7d4;
+    --sand:#f6f2ea;
+    --paper:#ffffff;
+    --text:#222a33;
+    --muted:#67707b;
+    --line:#e8e3d8;
+    --shadow:0 18px 50px -24px rgba(27,39,51,.45);
+    --shadow-sm:0 8px 24px -16px rgba(27,39,51,.4);
+    --radius:16px;
+    --maxw:1200px;
+    --head:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);color:var(--text);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:var(--head);line-height:1.15;color:var(--navy-900);letter-spacing:-.01em}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  section{padding:84px 0}
+  .wrap{width:min(100% - 40px,var(--maxw));margin-inline:auto}
+  .eyebrow{font-family:var(--head);font-weight:700;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-600);margin-bottom:14px}
+  .sec-head{max-width:680px;margin:0 auto 52px;text-align:center}
+  .sec-head h2{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:800}
+  .sec-head p{color:var(--muted);font-size:1.05rem;margin-top:14px}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--head);font-weight:700;font-size:.95rem;padding:14px 26px;border-radius:999px;border:1.5px solid transparent;cursor:pointer;transition:.22s ease;white-space:nowrap}
+  .btn svg{width:18px;height:18px}
+  .btn-gold{background:var(--gold);color:#fff;box-shadow:0 12px 26px -12px rgba(194,161,92,.8)}
+  .btn-gold:hover{background:var(--gold-600);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+  .btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
+  .btn-navy{background:var(--navy);color:#fff}
+  .btn-navy:hover{background:var(--navy-900);transform:translateY(-2px)}
+  .icn{width:22px;height:22px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+  /* ---------- NAVBAR ---------- */
+  header.nav{position:fixed;top:0;left:0;right:0;z-index:80;transition:.3s ease;padding:16px 0}
+  header.nav.scrolled{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 6px 24px -18px rgba(0,0,0,.5);padding:10px 0}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+  .nav-logo img{height:54px;transition:.3s ease}
+  .nav-logo .logo-top{filter:drop-shadow(0 2px 8px rgba(0,0,0,.45))}
+  .nav-logo .logo-scrolled{display:none}
+  header.nav.scrolled .nav-logo img{height:46px}
+  header.nav.scrolled .nav-logo .logo-top{display:none}
+  header.nav.scrolled .nav-logo .logo-scrolled{display:block}
+  .nav-links{display:flex;align-items:center;gap:30px}
+  .nav-links a{font-family:var(--head);font-weight:600;font-size:.95rem;color:#fff;transition:.2s}
+  header.nav.scrolled .nav-links a{color:var(--navy-900)}
+  .nav-links a:hover{color:var(--gold)}
+  .nav-cta{display:flex;align-items:center;gap:14px}
+  .nav-call{display:inline-flex;align-items:center;gap:9px;font-family:var(--head);font-weight:700;color:#fff;font-size:1rem}
+  header.nav.scrolled .nav-call{color:var(--navy-900)}
+  .nav-call .pill{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:var(--gold);color:#fff;flex:none}
+  .nav-call .pill svg{width:19px;height:19px}
+  .nav-call small{display:block;font-family:var(--body);font-weight:500;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;opacity:.7;line-height:1}
+  .nav-call b{font-size:1.02rem;letter-spacing:.01em}
+  .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+  .burger span{width:26px;height:2.5px;background:#fff;border-radius:2px;transition:.3s}
+  header.nav.scrolled .burger span{background:var(--navy-900)}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+  .hero-slides{position:absolute;inset:0;z-index:0}
+  .hero-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.4s ease;transform:scale(1.06);animation:kenburns 8s ease forwards}
+  .hero-slide.active{opacity:1}
+  @keyframes kenburns{to{transform:scale(1.12)}}
+  .hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(20,30,40,.62) 0%,rgba(20,30,40,.44) 40%,rgba(20,30,40,.78) 100%)}
+  .hero-inner{position:relative;z-index:2;padding:120px 20px 90px;max-width:920px}
+  .hero-logo{height:clamp(120px,20vw,210px);margin:0 auto 26px;filter:drop-shadow(0 10px 30px rgba(0,0,0,.5))}
+  .hero h1{color:#fff;font-size:clamp(2rem,5vw,3.5rem);font-weight:800;text-shadow:0 4px 24px rgba(0,0,0,.4)}
+  .hero h1 span{color:var(--gold)}
+  .hero p{color:rgba(255,255,255,.92);font-size:clamp(1.05rem,2vw,1.3rem);margin:20px auto 36px;max-width:640px;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+  .hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  .hero-rating{margin-top:30px;display:inline-flex;align-items:center;gap:10px;color:#fff;font-weight:600;font-family:var(--head);font-size:.95rem}
+  .hero-rating .stars{display:inline-flex;gap:2px}
+  .hero-rating .stars svg{width:18px;height:18px;fill:var(--gold)}
+  .hero-dots{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:3;display:flex;gap:10px}
+  .hero-dots button{width:10px;height:10px;border-radius:50%;border:0;background:rgba(255,255,255,.45);cursor:pointer;transition:.3s;padding:0}
+  .hero-dots button.active{background:var(--gold);width:30px;border-radius:999px}
+
+  /* ---------- TRUST ---------- */
+  .trust{background:var(--navy-900);padding:30px 0}
+  .trust-row{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px 40px}
+  .trust-item{display:flex;align-items:center;gap:11px;color:#fff}
+  .trust-item svg{width:26px;height:26px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  .trust-item b{font-family:var(--head);font-weight:700;font-size:.95rem;display:block;line-height:1.2}
+  .trust-item small{color:rgba(255,255,255,.6);font-size:.78rem}
+  .accred{border-top:1px solid rgba(255,255,255,.1);margin-top:26px;padding-top:24px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px}
+  .accred .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:8px 16px;color:rgba(255,255,255,.85);font-family:var(--head);font-weight:700;font-size:.85rem;letter-spacing:.02em}
+  .accred .badge svg{width:16px;height:16px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+  /* ---------- SERVICES ---------- */
+  .services{background:var(--sand)}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .svc-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;transition:.25s ease;position:relative;overflow:hidden}
+  .svc-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--gold-100)}
+  .svc-ico{width:54px;height:54px;border-radius:13px;background:linear-gradient(135deg,var(--navy),var(--navy-700));display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .svc-ico svg{width:26px;height:26px;stroke:var(--gold);stroke-width:1.9;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .svc-card h3{font-size:1.18rem;font-weight:700;margin-bottom:9px}
+  .svc-card p{color:var(--muted);font-size:.95rem}
+
+  /* ---------- BEFORE & AFTER ---------- */
+  .work-rows{display:flex;flex-direction:column;gap:clamp(54px,7vw,96px)}
+  .work-row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,5vw,72px);align-items:center}
+  .work-row.reverse .work-media{order:2}
+  .work-media{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;background:var(--navy-900)}
+  .work-media video{width:100%;height:100%;object-fit:cover;display:block}
+  .work-eyebrow{display:flex;align-items:center;gap:14px;font-family:var(--head);font-weight:700;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-600);margin-bottom:18px}
+  .work-eyebrow span{width:32px;height:2px;background:var(--gold);display:inline-block;flex:none}
+  .work-text h3{font-size:clamp(1.55rem,3.2vw,2.35rem);font-weight:800;line-height:1.12;margin-bottom:16px}
+  .work-text p{color:var(--muted);font-size:1.05rem;line-height:1.75}
+
+  /* ---------- GALLERY ---------- */
+  .gallery{background:var(--sand)}
+  .gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
+  .gal-grid figure{overflow:hidden;border-radius:14px;position:relative;cursor:pointer}
+  .gal-grid figure img{width:100%;height:100%;object-fit:cover;transition:.5s ease}
+  .gal-grid figure:hover img{transform:scale(1.08)}
+  .gal-grid figure::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(27,39,51,.5));opacity:0;transition:.3s}
+  .gal-grid figure:hover::after{opacity:1}
+  .gal-tall{grid-row:span 2}
+  .gal-wide{grid-column:span 2}
+
+  /* ---------- WHY ---------- */
+  .why{background:var(--navy-900);color:#fff;position:relative;overflow:hidden}
+  .why::before{content:"";position:absolute;top:-120px;right:-120px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(194,161,92,.18),transparent 70%)}
+  .why .sec-head h2{color:#fff}
+  .why .sec-head p{color:rgba(255,255,255,.7)}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative;z-index:2}
+  .why-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:30px 26px;transition:.25s}
+  .why-card:hover{background:rgba(255,255,255,.07);border-color:rgba(194,161,92,.4)}
+  .why-card .wi{width:50px;height:50px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .why-card .wi svg{width:24px;height:24px;stroke:var(--gold);stroke-width:1.9;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .why-card h3{color:#fff;font-size:1.12rem;margin-bottom:8px}
+  .why-card p{color:rgba(255,255,255,.72);font-size:.93rem}
+
+  /* ---------- REVIEWS ---------- */
+  .reviews{background:var(--sand);overflow:hidden}
+  .rev-viewport{overflow:hidden;max-width:640px;margin:0 auto}
+  .rev-track{display:flex;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+  .rev-card{flex:0 0 100%;padding:0 8px}
+  .rev-inner{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 34px 30px;box-shadow:var(--shadow-sm)}
+  .rev-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+  .rev-g{display:flex;align-items:center;gap:10px}
+  .rev-g svg{width:26px;height:26px}
+  .rev-g span{font-family:var(--head);font-weight:700;color:var(--navy-900);font-size:.95rem}
+  .rev-stars{display:flex;gap:2px}
+  .rev-stars svg{width:18px;height:18px;fill:#fbbc05}
+  .rev-text{color:#3a4450;font-size:1.02rem;line-height:1.7;margin-bottom:22px}
+  .rev-person{display:flex;align-items:center;gap:13px}
+  .rev-av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--gold));color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--head);font-weight:800;font-size:1.05rem;flex:none}
+  .rev-person b{display:block;font-family:var(--head);font-weight:700;color:var(--navy-900);font-size:.96rem}
+  .rev-person small{color:var(--muted);font-size:.82rem}
+  .rev-nav{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:26px}
+  .rev-nav button{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--line);background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.2s;color:var(--navy)}
+  .rev-nav button:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .rev-nav button svg{width:20px;height:20px;stroke:currentColor;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .rev-dots{display:flex;gap:8px}
+  .rev-dots button{width:9px;height:9px;border-radius:50%;border:0;background:var(--line);cursor:pointer;padding:0;transition:.3s}
+  .rev-dots button.active{background:var(--gold);width:26px;border-radius:999px}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+  .about-img{position:relative}
+  .about-img img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow)}
+  .about-img .stat{position:absolute;bottom:-26px;left:-26px;background:#fff;border-radius:14px;box-shadow:var(--shadow);padding:20px 26px;border:1px solid var(--line)}
+  .about-img .stat b{font-family:var(--head);font-weight:800;font-size:2rem;color:var(--navy-900);display:block;line-height:1}
+  .about-img .stat span{color:var(--muted);font-size:.85rem;font-weight:600}
+  .about-txt h2{font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:800;margin-bottom:18px}
+  .about-txt p{color:var(--muted);margin-bottom:16px;font-size:1.02rem}
+  .about-sign{display:flex;align-items:center;gap:16px;margin-top:26px;padding-top:24px;border-top:1px solid var(--line)}
+  .about-sign b{font-family:var(--head);font-weight:800;color:var(--navy-900);font-size:1.05rem}
+  .about-sign small{color:var(--gold-600);font-weight:600;display:block}
+  .about-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
+  .about-list li{list-style:none;display:flex;align-items:center;gap:10px;color:var(--text);font-weight:500;font-size:.96rem}
+  .about-list li svg{width:20px;height:20px;stroke:var(--gold-600);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+  /* ---------- CONTACT ---------- */
+  .contact{background:var(--sand)}
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:start}
+  .contact-info h2{font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:800;margin-bottom:16px}
+  .contact-info > p{color:var(--muted);margin-bottom:28px;font-size:1.04rem}
+  .ci-row{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+  .ci-row .ci-ic{width:50px;height:50px;border-radius:13px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;flex:none}
+  .ci-row .ci-ic svg{width:22px;height:22px;stroke:var(--gold-600);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .ci-row small{color:var(--muted);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+  .ci-row b{display:block;font-family:var(--head);font-weight:700;color:var(--navy-900);font-size:1.08rem}
+  .form{background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px;box-shadow:var(--shadow-sm)}
+  .form .fr{margin-bottom:16px}
+  .form .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .form label{display:block;font-family:var(--head);font-weight:600;font-size:.84rem;color:var(--navy-900);margin-bottom:7px}
+  .form input,.form select,.form textarea{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:13px 15px;font-family:var(--body);font-size:.98rem;color:var(--text);background:#fcfbf8;transition:.2s}
+  .form input:focus,.form select:focus,.form textarea:focus{outline:0;border-color:var(--gold);background:#fff;box-shadow:0 0 0 3px rgba(194,161,92,.14)}
+  .form textarea{resize:vertical;min-height:96px}
+  .form .btn{width:100%;justify-content:center;margin-top:6px;background:#25D366;color:#fff;border:0}
+  .form .btn:hover{background:#1fb855;transform:translateY(-2px)}
+  .form .note{text-align:center;color:var(--muted);font-size:.8rem;margin-top:12px}
+
+  /* ---------- FINAL CTA ---------- */
+  .final{position:relative;text-align:center;color:#fff;background-size:cover;background-position:center;background-attachment:fixed}
+  .final::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,39,51,.9),rgba(27,39,51,.82))}
+  .final .wrap{position:relative;z-index:2}
+  .final h2{color:#fff;font-size:clamp(1.9rem,4vw,2.9rem);font-weight:800;max-width:760px;margin:0 auto 18px}
+  .final p{color:rgba(255,255,255,.85);font-size:1.12rem;max-width:560px;margin:0 auto 34px}
+  .final-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--navy-900);color:rgba(255,255,255,.7);padding:64px 0 28px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:44px}
+  .foot-logo{height:70px;margin-bottom:20px}
+  .foot-col p{font-size:.93rem;line-height:1.7}
+  .foot-col h4{color:#fff;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+  .foot-col ul{list-style:none}
+  .foot-col ul li{margin-bottom:10px}
+  .foot-col ul a{font-size:.93rem;transition:.2s}
+  .foot-col ul a:hover{color:var(--gold)}
+  .foot-contact a{display:flex;align-items:center;gap:11px;margin-bottom:14px;font-size:.95rem}
+  .foot-contact svg{width:18px;height:18px;stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  .foot-accred{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+  .foot-accred .badge{border:1px solid rgba(255,255,255,.18);border-radius:7px;padding:6px 12px;font-family:var(--head);font-weight:700;font-size:.76rem;color:rgba(255,255,255,.8)}
+  .foot-bot{border-top:1px solid rgba(255,255,255,.1);padding-top:26px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.84rem}
+
+  /* ---------- FLOATING BUTTONS ---------- */
+  .wa-float{position:fixed;bottom:24px;right:24px;z-index:90;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px -8px rgba(37,211,102,.7);transition:.25s;animation:wapulse 2.6s infinite}
+  .wa-float:hover{transform:scale(1.08)}
+  .wa-float svg{width:32px;height:32px;fill:#fff}
+  @keyframes wapulse{0%{box-shadow:0 14px 30px -8px rgba(37,211,102,.7),0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 14px 30px -8px rgba(37,211,102,.7),0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 14px 30px -8px rgba(37,211,102,.7),0 0 0 0 rgba(37,211,102,0)}}
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:980px){
+    .svc-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
+    .about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+    .about-img .stat{left:0}
+    .foot-grid{grid-template-columns:1fr 1fr;gap:32px}
+    .work-row{grid-template-columns:1fr;gap:26px}
+    .work-row.reverse .work-media{order:0}
+    .gal-grid{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(max-width:680px){
+    section{padding:60px 0}
+    .nav-links{display:none}
+    .nav-call small{display:none}
+    .nav-call b{display:none}
+    .burger{display:flex}
+    .svc-grid{grid-template-columns:1fr 1fr;gap:12px}
+    .svc-card{padding:20px 16px}
+    .svc-ico{width:46px;height:46px;margin-bottom:13px}
+    .svc-card h3{font-size:1rem}
+    .svc-card p{font-size:.85rem}
+    .why-grid{grid-template-columns:1fr}
+    .about-list{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr}
+    .foot-bot{flex-direction:column;text-align:center}
+    .gal-wide{grid-column:span 2}
+    .gal-tall{grid-row:span 1}
+    .final{background-attachment:scroll}
+    .mob-menu.open{display:flex}
+  }
+  .mob-menu{display:none;position:fixed;inset:0;z-index:79;background:rgba(27,39,51,.98);flex-direction:column;align-items:center;justify-content:center;gap:28px}
+  .mob-menu a{color:#fff;font-family:var(--head);font-weight:700;font-size:1.4rem}
+  .mob-menu a:hover{color:var(--gold)}
+  .mob-close{position:absolute;top:24px;right:24px;background:none;border:0;color:#fff;cursor:pointer}
+  .mob-close svg{width:34px;height:34px;stroke:#fff;stroke-width:2;fill:none}
+</style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="nav-logo"><img class="logo-top" src="logo-dark.png" alt="Resin Driveways Derbyshire" /><img class="logo-scrolled" src="logo-light.png" alt="Resin Driveways Derbyshire" /></a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+447718155997" class="nav-call">
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span><small>Call us today</small><b>07718 155997</b></span>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" id="mobClose" aria-label="Close menu"><svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <a href="#services">Services</a>
+  <a href="#work">Our Work</a>
+  <a href="#why">Why Us</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#about">About</a>
+  <a href="#contact" class="btn btn-gold">Get a Free Quote</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide active" style="background-image:url('1.webp')"></div>
+    <div class="hero-slide" style="background-image:url('23.jpeg')"></div>
+    <div class="hero-slide" style="background-image:url('18.jpeg')"></div>
+    <div class="hero-slide" style="background-image:url('12.jpeg')"></div>
+  </div>
+  <div class="hero-inner">
+    <img src="logo-dark.png" class="hero-logo" alt="Resin Driveways Derbyshire" />
+    <h1>Stunning Resin Driveways,<br>Built to <span>Last a Lifetime</span></h1>
+    <p>Premium resin bound driveways, patios and pathways installed across Derbyshire. SUDS compliant, fully insured, and backed by a 10 year guarantee.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-gold">Get Your Free Quote
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="tel:+447718155997" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        07718 155997
+      </a>
+    </div>
+    <div class="hero-rating">
+      <span class="stars">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </span>
+      Rated 5.0 by homeowners across Derbyshire
+    </div>
+  </div>
+  <div class="hero-dots" id="heroDots"></div>
+</section>
+
+<!-- ================= TRUST ================= -->
+<section class="trust" style="padding:38px 0">
+  <div class="wrap">
+    <div class="trust-row">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+        <span><b>Fully Insured</b><small>Public liability cover</small></span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+        <span><b>10 Year Guarantee</b><small>On every installation</small></span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+        <span><b>SUDS Compliant</b><small>Fully permeable</small></span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <span><b>5 Star Rated</b><small>Trusted by locals</small></span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span><b>Local &amp; Trusted</b><small>Based in Derbyshire</small></span>
+      </div>
+    </div>
+    <div class="accred">
+      <span class="badge"><svg viewBox="0 0 24 24"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Checkatrade Approved</span>
+      <span class="badge"><svg viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>TrustMark Registered</span>
+      <span class="badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>Which? Trusted Trader</span>
+      <span class="badge"><svg viewBox="0 0 24 24"><path d="m12 3 8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg>Marshalls Accredited</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">What We Do</div>
+      <h2>Resin Surfacing, Done Properly</h2>
+      <p>From driveways to garden paths, we install hard-wearing, beautiful resin bound surfaces tailored to your home.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+        <h3>Resin Bound Driveways</h3>
+        <p>Smooth, durable and slip-resistant driveways that transform your kerb appeal and last for decades.</p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg></div>
+        <h3>Resin Patios &amp; Garden Areas</h3>
+        <p>Seamless patios and seating areas that blend beautifully with planting, paving and the rest of your garden.</p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg></div>
+        <h3>Pathways &amp; Walkways</h3>
+        <p>Flowing, permeable paths that link your driveway, garden and entrances with a clean, premium finish.</p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div>
+        <h3>Pool &amp; Patio Surrounds</h3>
+        <p>Cool, non-slip resin surrounds for pools, ponds and entertaining spaces that look the part all year round.</p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"/><path d="M2 22h20M10 6h0M14 6h0M10 10h0M14 10h0M10 14h0M14 14h0"/></svg></div>
+        <h3>Commercial Surfacing</h3>
+        <p>Hard-wearing resin for car parks, forecourts and communal areas, installed with minimal disruption.</p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.84z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg></div>
+        <h3>Groundworks &amp; Prep</h3>
+        <p>Full excavation, drainage and sub-base preparation so your new surface is built on solid foundations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEFORE & AFTER ================= -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Real Transformations</div>
+      <h2>Before &amp; After</h2>
+      <p>Watch tired, cracked surfaces become stunning resin driveways. These are genuine Derbyshire projects.</p>
+    </div>
+    <div class="work-rows">
+      <div class="work-row reveal">
+        <div class="work-media">
+          <video src="before-after-01.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        </div>
+        <div class="work-text">
+          <div class="work-eyebrow"><span></span>Driveway Transformation</div>
+          <h3>From worn and tired to a flawless new finish</h3>
+          <p>See the difference a proper job makes. This driveway was stripped back, rebuilt on a solid, free-draining sub-base and finished in a warm gravel-tone resin bound surface. A dated, tired frontage becomes smart, low-maintenance kerb appeal that is built to last.</p>
+        </div>
+      </div>
+      <div class="work-row reverse reveal">
+        <div class="work-media">
+          <video src="before-after-06.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        </div>
+        <div class="work-text">
+          <div class="work-eyebrow"><span></span>Driveway Transformation</div>
+          <h3>A complete kerb appeal upgrade</h3>
+          <p>What started as a worn, uneven surface was excavated, re-levelled and rebuilt on a solid, free-draining base, then finished with a seamless resin driveway and crisp block-paved borders. The result is a hard-wearing, low-maintenance driveway with standout kerb appeal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Our Portfolio</div>
+      <h2>Recent Projects</h2>
+      <p>A selection of resin driveways, paths and patios completed for homeowners across the county.</p>
+    </div>
+    <div class="gal-grid">
+      <figure class="gal-wide gal-tall reveal"><img src="1.webp" alt="Golden resin bound driveway" loading="lazy" /></figure>
+      <figure class="reveal"><img src="23.jpeg" alt="Brown resin driveway with cobble border" loading="lazy" /></figure>
+      <figure class="reveal"><img src="18.jpeg" alt="Charcoal resin driveway" loading="lazy" /></figure>
+      <figure class="reveal"><img src="10.jpeg" alt="Resin garden path and patio" loading="lazy" /></figure>
+      <figure class="reveal"><img src="22.jpeg" alt="Sandy resin driveway with cobble edge" loading="lazy" /></figure>
+      <figure class="gal-wide reveal"><img src="16.jpeg" alt="Resin driveway aerial view" loading="lazy" /></figure>
+      <figure class="reveal"><img src="12.jpeg" alt="Resin driveway with block border" loading="lazy" /></figure>
+      <figure class="reveal"><img src="a1.jpg" alt="Grey resin driveway with block paving" loading="lazy" /></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY ================= -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Why Resin Driveways Derbyshire</div>
+      <h2>Built on Quality, Backed by Guarantee</h2>
+      <p>We treat every driveway like it is our own. Here is what sets our installations apart.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="wi"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+        <h3>10 Year Guarantee</h3>
+        <p>Every installation is covered by a comprehensive 10 year guarantee for total peace of mind.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="wi"><svg viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div>
+        <h3>SUDS Compliant &amp; Permeable</h3>
+        <p>Fully permeable surfaces that drain naturally, prevent puddles and need no planning permission.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="wi"><svg viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Fully Insured Team</h3>
+        <p>Time-served, fully insured installers using premium UV-stable resins and aggregates.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="wi"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>On Time, Every Time</h3>
+        <p>Most driveways are completed in a single day, with clear timelines and tidy, respectful working.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="wi"><svg viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></div>
+        <h3>Free, Honest Quotes</h3>
+        <p>Transparent, no-pressure quotations with a fixed price and no hidden extras, ever.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="wi"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>Proudly Local</h3>
+        <p>A Derbyshire-based team that knows the area and is always just a phone call away.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">5 Star Reviews</div>
+      <h2>What Our Customers Say</h2>
+      <p>Real feedback from homeowners across Derbyshire.</p>
+    </div>
+    <div class="rev-viewport reveal">
+      <div class="rev-track" id="revTrack">
+        <!-- card template -->
+        <div class="rev-card">
+          <div class="rev-inner">
+            <div class="rev-top">
+              <div class="rev-g">
+                <svg viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                <span>Google Review</span>
+              </div>
+              <div class="rev-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            </div>
+            <p class="rev-text">"Absolutely thrilled with our new resin driveway. The team were professional from quote to completion and finished in a single day. It has completely transformed the front of our house."</p>
+            <div class="rev-person"><div class="rev-av">SH</div><div><b>Sarah Hughes</b><small>Derby</small></div></div>
+          </div>
+        </div>
+        <div class="rev-card">
+          <div class="rev-inner">
+            <div class="rev-top">
+              <div class="rev-g">
+                <svg viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                <span>Google Review</span>
+              </div>
+              <div class="rev-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            </div>
+            <p class="rev-text">"From the first visit I knew we were in good hands. Tidy, punctual and the quality of the finish is outstanding. Several neighbours have already asked who did it. Highly recommended."</p>
+            <div class="rev-person"><div class="rev-av">MJ</div><div><b>Mark Jenkins</b><small>Chesterfield</small></div></div>
+          </div>
+        </div>
+        <div class="rev-card">
+          <div class="rev-inner">
+            <div class="rev-top">
+              <div class="rev-g">
+                <svg viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                <span>Google Review</span>
+              </div>
+              <div class="rev-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            </div>
+            <p class="rev-text">"Great value and a beautiful job. They explained every step, kept the site clean and the driveway has handled a wet winter without a single puddle. Couldn't be happier with it."</p>
+            <div class="rev-person"><div class="rev-av">EP</div><div><b>Emma Patterson</b><small>Belper</small></div></div>
+          </div>
+        </div>
+        <div class="rev-card">
+          <div class="rev-inner">
+            <div class="rev-top">
+              <div class="rev-g">
+                <svg viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                <span>Google Review</span>
+              </div>
+              <div class="rev-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            </div>
+            <p class="rev-text">"Faultless service. The new resin path and patio look incredible and have really lifted the whole garden. Professional, friendly and clearly take real pride in their work."</p>
+            <div class="rev-person"><div class="rev-av">DT</div><div><b>David Thompson</b><small>Ilkeston</small></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rev-nav">
+      <button id="revPrev" aria-label="Previous review"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+      <div class="rev-dots" id="revDots"></div>
+      <button id="revNext" aria-label="Next review"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-img reveal">
+      <img src="about.png" alt="Resin Driveways Derbyshire van" />
+      <div class="stat"><b>15+</b><span>Years of experience</span></div>
+    </div>
+    <div class="about-txt reveal">
+      <div class="eyebrow">Meet The Team</div>
+      <h2>A Local Family Business You Can Trust</h2>
+      <p>Resin Driveways Derbyshire is a local, family-run installer specialising exclusively in resin bound surfacing. We have built our reputation on doing things the right way, with honest advice, premium materials and a finish that lasts.</p>
+      <p>From your first phone call to the final sweep up, you will deal directly with the people doing the work. No call centres, no pushy sales, just a friendly team that genuinely cares about the result.</p>
+      <ul class="about-list">
+        <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Free site surveys</li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Fixed, written quotes</li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Premium UV-stable resin</li>
+        <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Tidy, respectful team</li>
+      </ul>
+      <div class="about-sign">
+        <a href="tel:+447718155997" class="btn btn-navy">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Speak to the team
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <div class="eyebrow">Get In Touch</div>
+      <h2>Request Your Free Quote</h2>
+      <p>Tell us a little about your project and we will get straight back to you with friendly advice and a no-obligation quote.</p>
+      <div class="ci-row">
+        <div class="ci-ic"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <div><small>Call us</small><b><a href="tel:+447718155997">07718 155997</a></b></div>
+      </div>
+      <div class="ci-row">
+        <div class="ci-ic"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><small>Area covered</small><b>Derbyshire &amp; surrounding</b></div>
+      </div>
+      <div class="ci-row">
+        <div class="ci-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <div><small>Opening hours</small><b>Mon to Sat, 8am to 6pm</b></div>
+      </div>
+    </div>
+    <form class="form reveal" id="quoteForm">
+      <div class="two">
+        <div class="fr"><label for="name">Your Name</label><input id="name" name="name" type="text" placeholder="John Smith" required /></div>
+        <div class="fr"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" placeholder="07000 000000" required /></div>
+      </div>
+      <div class="two">
+        <div class="fr"><label for="postcode">Postcode</label><input id="postcode" name="postcode" type="text" placeholder="DE1 2AB" /></div>
+        <div class="fr">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service">
+            <option>Resin Bound Driveway</option>
+            <option>Resin Patio / Garden Area</option>
+            <option>Pathway / Walkway</option>
+            <option>Pool / Patio Surround</option>
+            <option>Commercial Surfacing</option>
+            <option>Other / Not Sure</option>
+          </select>
+        </div>
+      </div>
+      <div class="fr"><label for="message">Project Details</label><textarea id="message" name="message" placeholder="Tell us about the area, approximate size and any colours you like..."></textarea></div>
+      <button type="submit" class="btn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.359.101 11.892c0 2.096.546 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.582 0 11.940-5.359 11.943-11.893a11.821 11.821 0 00-3.495-8.413z"/></svg>
+        Send via WhatsApp
+      </button>
+      <p class="note">Prefer to talk? Call us on <a href="tel:+447718155997" style="color:var(--gold-600);font-weight:600">07718 155997</a></p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="final" style="background-image:url('23.jpeg')">
+  <div class="wrap">
+    <h2>Ready to Transform Your Driveway?</h2>
+    <p>Join the homeowners across Derbyshire who chose a resin driveway built to last. Get your free quote today.</p>
+    <div class="final-cta">
+      <a href="#contact" class="btn btn-gold">Get Your Free Quote
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="tel:+447718155997" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        07718 155997
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <img src="logo-dark.png" class="foot-logo" alt="Resin Driveways Derbyshire" />
+        <p>Premium resin bound driveways, patios and pathways installed across Derbyshire. Fully insured, SUDS compliant and backed by a 10 year guarantee.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Resin Driveways</a></li>
+          <li><a href="#services">Resin Patios</a></li>
+          <li><a href="#services">Pathways</a></li>
+          <li><a href="#services">Pool Surrounds</a></li>
+          <li><a href="#services">Commercial Surfacing</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#work">Our Work</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Free Quote</a></li>
+        </ul>
+      </div>
+      <div class="foot-col foot-contact">
+        <h4>Get In Touch</h4>
+        <a href="tel:+447718155997"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>07718 155997</a>
+        <a href="#"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Derbyshire, UK</a>
+        <div class="foot-accred">
+          <span class="badge">Checkatrade</span>
+          <span class="badge">TrustMark</span>
+          <span class="badge">Which? Trusted</span>
+          <span class="badge">Marshalls</span>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>&copy; <span id="year"></span> Resin Driveways Derbyshire. All rights reserved.</span>
+      <span>Resin bound driveways across Derbyshire</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= FLOATING WHATSAPP ================= -->
+<a class="wa-float" href="https://wa.me/447718155997?text=Hi%20Resin%20Driveways%20Derbyshire%2C%20I%27d%20like%20a%20free%20quote%20for%20my%20driveway." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.359.101 11.892c0 2.096.546 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.582 0 11.940-5.359 11.943-11.893a11.821 11.821 0 00-3.495-8.413z"/></svg>
+</a>
+
+<script>
+  // year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // navbar scroll
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  // mobile menu
+  const mob = document.getElementById('mobMenu');
+  document.getElementById('burger').addEventListener('click', () => mob.classList.add('open'));
+  document.getElementById('mobClose').addEventListener('click', () => mob.classList.remove('open'));
+  mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mob.classList.remove('open')));
+
+  // hero slider
+  (function(){
+    const slides = Array.from(document.querySelectorAll('.hero-slide'));
+    const dotsWrap = document.getElementById('heroDots');
+    let i = 0;
+    slides.forEach((_, idx) => {
+      const b = document.createElement('button');
+      if(idx===0) b.classList.add('active');
+      b.addEventListener('click', () => go(idx));
+      dotsWrap.appendChild(b);
+    });
+    const dots = Array.from(dotsWrap.children);
+    function go(n){
+      slides[i].classList.remove('active'); dots[i].classList.remove('active');
+      i = (n + slides.length) % slides.length;
+      slides[i].classList.add('active'); dots[i].classList.add('active');
+    }
+    setInterval(() => go(i+1), 5500);
+  })();
+
+  // reviews slider
+  (function(){
+    const track = document.getElementById('revTrack');
+    const cards = Array.from(track.children);
+    const dotsWrap = document.getElementById('revDots');
+    let i = 0, timer;
+    cards.forEach((_, idx) => {
+      const b = document.createElement('button');
+      if(idx===0) b.classList.add('active');
+      b.addEventListener('click', () => { go(idx); restart(); });
+      dotsWrap.appendChild(b);
+    });
+    const dots = Array.from(dotsWrap.children);
+    function go(n){
+      i = (n + cards.length) % cards.length;
+      track.style.transform = `translateX(-${i*100}%)`;
+      dots.forEach((d,x) => d.classList.toggle('active', x===i));
+    }
+    function restart(){ clearInterval(timer); timer = setInterval(() => go(i+1), 5000); }
+    document.getElementById('revNext').addEventListener('click', () => { go(i+1); restart(); });
+    document.getElementById('revPrev').addEventListener('click', () => { go(i-1); restart(); });
+    // swipe
+    let x0 = null;
+    track.addEventListener('touchstart', e => x0 = e.touches[0].clientX, {passive:true});
+    track.addEventListener('touchend', e => {
+      if(x0===null) return;
+      const dx = e.changedTouches[0].clientX - x0;
+      if(Math.abs(dx) > 40){ dx < 0 ? go(i+1) : go(i-1); restart(); }
+      x0 = null;
+    }, {passive:true});
+    restart();
+  })();
+
+  // contact form -> WhatsApp
+  document.getElementById('quoteForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const f = this;
+    const msg =
+      'Hi Resin Driveways Derbyshire, I would like a free quote.%0A%0A' +
+      'Name: ' + encodeURIComponent(f.name.value) + '%0A' +
+      'Phone: ' + encodeURIComponent(f.phone.value) + '%0A' +
+      'Postcode: ' + encodeURIComponent(f.postcode.value) + '%0A' +
+      'Service: ' + encodeURIComponent(f.service.value) + '%0A' +
+      'Details: ' + encodeURIComponent(f.message.value);
+    window.open('https://wa.me/447718155997?text=' + msg, '_blank');
+  });
+
+  // reveal on scroll
+  (function(){
+    const els = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(en => { if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, {threshold:.12});
+    els.forEach(el => io.observe(el));
+  })();
+</script>
+</body>
+</html>
